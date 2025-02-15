@@ -1,0 +1,119 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Login Section */
+#login-section {
+    text-align: center;
+}
+
+#login-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4ca1af;
+}
+
+#username {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #4ca1af;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #3b8d99;
+}
+
+/* Chat Section */
+#chat-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#chat-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #4ca1af;
+    text-align: center;
+}
+
+#chat-window {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+#chat-window div {
+    margin-bottom: 10px;
+}
+
+#message-input {
+    width: calc(100% - 110px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+button:last-of-type {
+    width: 80px;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    #message-input {
+        width: calc(100% - 90px);
+    }
+
+    button:last-of-type {
+        width: 70px;
+    }
+}
