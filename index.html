@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat with Firebase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Enter username">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- Chat Section -->
+        <div id="chat-section" style="display: none;">
+            <h2>Welcome, <span id="current-user"></span>!</h2>
+            <div id="chat-window"></div>
+            <input type="text" id="message-input" placeholder="Type your message">
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
